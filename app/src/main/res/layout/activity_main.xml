@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCookie"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cookie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imgCookie"
+        android:layout_centerHorizontal="true"
+        android:text="100"
+        android:textSize="42sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/imgCookie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="155dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
